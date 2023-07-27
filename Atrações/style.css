@@ -1,0 +1,33 @@
+body{
+    background-image: url(../Imagens/fundo-do-site.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.propaganda img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 400px;
+    margin-right: 0;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: -90px;
+}
+
+.titulo h2{
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.titulo p a{
+    font-size: 20px;
+    color: #FEAFFF;
+    text-decoration: none;
+}
