@@ -1,17 +1,115 @@
 body{
-    background-image: url(../Imagens/fundo-do-site.webp);
+    margin: 0;
+    padding: 0;
+    background-image: url(../Imagens/Items-adicionais/fundo-brabo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
 }
 
+/* HEADER ________________________________________________________________________ */
+
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 2000vh;
+  }
+  
+  /* ESTILO DO MENU */
+  #header {
+    z-index: 1;
+    display: flex;
+    transition: all 1s ease;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    /* IMAGENS DA LOGO COM, OS HOVER DOS BOTÕES */
+  }
+  
+  #header img {
+    gap: 2rem;
+    height: 70px;
+    width: 80px;
+  }
+  
+  #menu a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 217, 255);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  #menu a:hover:before {
+    visibility: visible;
+    color: white;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  
+  /* ESTILO DO MENU COMO QUE ELE FICARIA */
+  #menu {
+    transition: all 1s;
+    height: 1px;
+    left: 900px;
+    margin-top: 20px;
+    background-color: #ffffff00;
+    padding: 20px;
+    position: sticky;
+    top: 80px;
+    /* ALTURA DO CABEÇALHO */
+  }
+  
+  /* ESTILOS DO MENU */
+  #menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #menu ul li {
+  
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  #menu ul li a {
+    color: white;
+    transition: all 1s ease;
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+  }
+
+    /* PARTE DE CIMA ________________________________________________________________ */
 .propaganda img{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 400px;
-    margin-right: 0;
+    height: 900px;
+}
+
+.propaganda h1{
+    z-index: 0;
+    display: flex;
+    top: -600px;
+    position: relative;
+    justify-content: center;
+    font-size: 150px;
 }
 
 .titulo {
@@ -30,4 +128,30 @@ body{
     font-size: 20px;
     color: #FEAFFF;
     text-decoration: none;
+}
+
+/* PARTE DE CIMA ___________________________________________________________________ */
+
+.anuncio{
+    display: flex;
+}
+
+.imagem-central img{
+    width: 500px;
+    height: 300px;
+    margin-left: 50px;
+}
+
+
+.setas{
+    justify-content: space-around;
+    display: flex;
+}
+
+.setas img{
+    width: 40px;
+    position: relative;
+    top: -150px;
+    left: -160px;
+    opacity: 50%;
 }
