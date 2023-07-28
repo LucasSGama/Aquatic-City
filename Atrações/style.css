@@ -1,10 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(../Imagens/Items-adicionais/fundo-brabo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    
 }
 
 /* HEADER ________________________________________________________________________ */
@@ -96,39 +93,56 @@ body {
   }
 
     /* PARTE DE CIMA ________________________________________________________________ */
-.propaganda img{
+.propoganda{
+  padding: 0;
+}
+
+    .propaganda img{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 900px;
+    height: 700px;
+    margin-bottom: 0;
 }
 
 .propaganda h1{
     z-index: 0;
     display: flex;
-    top: -600px;
+    top: -500px;
     position: relative;
     justify-content: center;
     font-size: 150px;
+    margin-bottom: 0;
 }
+/* PROPAGANDA ______________________________- */
 
 .titulo {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     gap: -90px;
+    top: -250px;
+
 }
 
 .titulo h2{
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 70px;
 }
 
 .titulo p a{
-    font-size: 20px;
-    color: #FEAFFF;
+    font-size: 40px;
+    color: #4B3BFC;
     text-decoration: none;
 }
+
+.titulo p a:hover{
+  text-decoration: underline;
+}
+
+
+
 
 /* PARTE DE CIMA ___________________________________________________________________ */
 
@@ -137,21 +151,93 @@ body {
 }
 
 .imagem-central img{
-    width: 500px;
-    height: 300px;
-    margin-left: 50px;
-}
-
-
-.setas{
-    justify-content: space-around;
-    display: flex;
-}
-
-.setas img{
-    width: 40px;
+    width: 600px;
+    height: 500px;
     position: relative;
-    top: -150px;
-    left: -160px;
-    opacity: 50%;
+    margin-left: 150px;
+    top: -180px;
+}
+
+.circulos img{
+  width: 50px;
+  opacity: 50%;
+  position: relative;
+  align-items: center;
+  left: 320px;
+  bottom: 225px;
+}
+
+@keyframes scaleAnimation{
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.circulos img:hover{
+  opacity: 100%;
+  animation: scaleAnimation 1s alternate infinite;
+
+}
+
+/* PARTE ESQUERDA ____________________________________________ */
+
+.topo-anuncio{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: -180px;
+}
+
+.topo-anuncio p{
+  position: relative;
+  right: -20px;
+  top: -50px;
+  font-size: 60px;
+}
+
+.topo-anuncio img{
+  width: 130px;
+  height: 130px;
+  position: relative;
+  right: -30px;
+}
+/* TOPO _______________________ */
+
+/* DESCRIÇÃO */
+
+.descricao p {
+  left: 20px;
+  top: -200px;
+  position: relative;
+  font-size: 25px;
+}
+
+/* DESCRIÇÃO */
+
+/* BOTAO */
+
+.botao-a{
+  text-decoration: none;
+}
+
+.botao{
+  border: 1px solid;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 390px;
+  background-image: linear-gradient(to top, #fff, #4B3BFC);
+  left: 80px;
+  bottom: 185px;
+  position: relative;
+}
+
+.botao p{
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
 }
