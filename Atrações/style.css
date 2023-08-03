@@ -11,7 +11,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 2000vh;
+    /* height: 2000vh; */
   }
   
   /* ESTILO DO MENU */
@@ -214,6 +214,7 @@ body {
   top: -200px;
   position: relative;
   font-size: 25px;
+  text-align: justify;
 }
 
 /* DESCRIÇÃO */
@@ -232,7 +233,7 @@ body {
   width: 390px;
   background-image: linear-gradient(to top, #fff, #4B3BFC);
   left: 80px;
-  bottom: 185px;
+  bottom: 130px;
   position: relative;
 }
 
@@ -241,3 +242,102 @@ body {
   text-decoration: none;
   color: black;
 }
+
+/* SEGUNDO ANUNCIO ___________________________ */
+
+.segundo-anuncio {
+  display: flex;
+  margin-top: 150px;
+  margin-left: 150px;
+}
+
+.segundo-anuncio .direita .topo-anuncio p{
+  left: 130px;
+}
+
+.segundo-anuncio .direita .topo-anuncio img {
+  left: 100px;
+  bottom: 20px;
+}
+
+
+
+.segundo-anuncio .direita .descricao p{
+  left: 100px;
+  position: relative;
+}
+
+.segundo-anuncio .direita .botao {
+  top: -160px;
+  position: relative;
+} 
+
+/* width: 600px;
+    height: 500px;
+    position: relative;
+    margin-left: 150px;
+    top: -180px; */
+
+    footer {
+      border: 1px solid;
+      background-color: #FEAFFF;
+      padding-top: 10px;
+    }
+
+    .twitter {
+      width: 55px;
+      height: 45px;
+      position: relative;
+    }
+
+    .facebook{
+      width: 80px;
+      left: -15px;
+      position: relative;
+    }
+
+    .facebook-texto {
+      position: relative;
+      left: -20px;
+    }
+    
+    .footer {
+      font-size: 20px;
+      display: flex;
+      gap: 250px;
+    }
+
+    .rede-social-texto {
+      display: flex;
+    }
+
+    .rede-social-texto p{
+      margin-left: 15px;
+    }
+
+    .baleia-footer {
+      width: 90px;
+      height: 90px;
+      position: relative;
+      top: 25px;
+      margin-right: 20px;
+    }
+
+    .inicial-footer{
+      position: relative;
+      top: -20px;
+    }
+
+    .inicial-footer a{
+      text-decoration: none;
+      color: black;
+    }
+
+    .footer .items{
+      margin-left: 30px;
+    }
+
+    .texto-motivacional{
+      position: relative;
+      left: 30px;
+    }
